@@ -1,0 +1,61 @@
+<!doctype html>
+<!--VERSÃO DO HTML (MAIS MODERNA)-->
+
+<html lang="pt-br">
+  <!-- FICA TODO O SITE -->
+
+  <head>
+    <!-- CABEÇA - CONFIGURAÇÕES -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./image/fintech.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Finanças com IA</title>
+  </head>
+
+  <body>
+    <!-- TODA A PARTE VISÍVEL -->
+
+    <div>
+      <h1>📸 Finanças com <span class="ia">IA</span></h1>
+      <p class="topo">Fotografe os comprovantes. A IA anota pra você.</p>
+    </div>
+
+    <div class="caixa-total">
+      <p>Total gasto</p>
+      <h2 class="total-gasto">R$ 0,00</h2>
+      <p>Os comprovantes lidos</p>
+    </div>
+
+    <!-- INPUT PARA SELECIONAR IMAGENS -->
+
+    <!-- label -  -->
+    <!-- change - mudar -->
+    <label>
+      🧾 Toque para fotografar o comprovante
+      <input type="file" class="foto" onchange="lerFoto()" />
+    </label>
+
+    <div class="lista"></div>
+  </body>
+
+  <!-- *** AQUI ESTÁ A CORREÇÃO CRÍTICA *** -->
+  <!-- Carregue a biblioteca puter.ai ANTES do seu script JS -->
+  <!-- Substitua "caminho/para/puter.js" pelo caminho correto da sua biblioteca puter.ai -->
+  <!-- Se for um CDN, será um link como <script src="https://cdn.example.com/puter.js"></script> -->
+  <script src="scripts.js"></script>
+  <script src="https://js.puter.com/v2/"></script>
+</html>
